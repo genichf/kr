@@ -1,0 +1,293 @@
+/* ==== overwrite bootstrap standard ==== */
+@import url('overwrite.css');
+
+/* ===================================
+1. General
+==================================== */
+body {
+	font-family:'Calibri', 'Open Sans', Arial, sans-serif;
+	color: #000;
+	height:100%;
+	margin:0;
+	padding:0;
+	background-color: #fff;
+}
+html{
+    height:100%;
+	margin:0;
+	padding:0;
+}
+
+#content{ 
+  padding:20px 0 0 0;
+  font-size: 18px; /*my*/
+  /*position: absolute;  /*my*/
+  /*min-height: 600px !important;*/
+  height: 100%;
+ 
+}                    /*my*/
+/*my*/ 
+#index-wrapper{ /*my*/
+    background: url(../img/bg.jpg)repeat-y center;/*my*/
+	background-size: 100%; /* Масштабируем фон */
+	position: absolute;
+	min-height: 100%;
+	/*height: 100%;*/
+	margin-bottom:-100px;
+	padding:0;/*my*/
+	width: 100%;
+
+}
+/*my*/ 
+#main-wrapper{ /*my*/
+    /*background: url(../img/bg_top_img_header_new.jpg) repeat-x top, url(../img/bg_img2.jpg) repeat-y top;/*my*/
+	background: url(../img/bg.jpg)repeat-y center;/*my*/
+	background-size: 100%; /* Масштабируем фон */
+	position: absolute;
+	min-height: 100%;
+	/*height: 100%;*/
+	margin-bottom:-100px;
+    padding:0;/*my*/
+	width: 100%;
+}
+/*my*/ 
+.my_text{
+  font-size: 20px; /*my*/
+}
+
+/*my*/ 
+ul.my_ul{
+  list-style-type:circle;
+  font-size: 20px; /*my*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Calibri','Open Sans', Arial, sans-serif;
+	/*font-weight:700;*/
+	font-size: 30px; /*my*/
+	line-height:1.1em;
+	color:#000;
+	margin-bottom: 20px;
+}
+
+.name_studio_text{
+  font-family: 'Monotype Corsiva', 'Calibri', 'Open Sans', Arial, sans-serif;
+  font-size: 38px; /*my*/
+}
+
+/* ===================================
+4. Header
+==================================== */
+
+/* --- header -- */
+
+header .navbar {
+    margin-bottom: 0;
+}
+
+/*my*//*for EW slides*//*----------------------------------------*/
+/*.roundabout-holder  {height:5em;}
+.roundabout-moveable-item {cursor:pointer;width:636px;height:478px;margin-top:229px;padding-bottom:20px}
+.roundabout-in-focus {cursor:auto;}
+#gallery {position:relative;height:520px}
+#gallery img {display:block;width:100%;height:100%}
+#gallery li {}*/
+/*-----------------------------------------------------------*/
+/*my*//*for EW slides*//*----------------------------------------*/
+.roundabout-holder  {height:0}
+.roundabout-moveable-item {cursor:pointer;width:636px;height:478px;margin-top:229px}
+.roundabout-in-focus {cursor:auto;}
+#gallery {position:relative;height:0}
+#gallery img {display:block;width:100%;height:100%}
+#gallery li {}
+/*-----------------------------------------------------------*/
+
+
+.navbar-default {
+    border: none;
+	background: none; /*my*//*добавив рядок щоб полоса меню верхнього була прозора*/
+}
+
+
+
+header .navbar-collapse {
+    padding-top: 10px;
+}
+header .navbar-collapse  ul.navbar-nav {
+    float: right;
+    margin-right: 0;
+}
+
+
+header .navbar-nav > li  {
+    padding-bottom: 0px;
+    padding-top: 30px;
+}
+
+/* --- menu --- */
+
+header .navigation {
+	float:right;
+}
+
+header ul.nav li a {	
+	font-size:20px;
+	border:none;
+	font-weight:0;
+	/*text-transform:uppercase;*/
+}
+
+header ul.nav li ul li a {	
+	font-size:20px;
+	border:none;
+	font-weight:0;
+	/*text-transform:uppercase;*/
+}
+
+
+.navbar .nav > li > a {
+  font-size:20px;
+  color: #000; /*my*//*колір букв верхнього меню*/
+  text-shadow: none;
+  font-weight:0;
+}
+.navbar .nav > li > a:hover {
+  color: #ff9f9f; /*my*//*колір букв верхнього меню при наведенні мишкою*/
+}
+
+.navbar .nav > .active > a,.navbar .nav > .active > a:hover {
+	background:none;
+	font-weight:0;
+	color: #ff0000; /*my*//*колір букв активного пункта верхнього меню*/
+}
+
+
+
+/* ===================================
+5. Section: Featured
+==================================== */
+
+#featured{
+	width: 100%;
+	             /*my*//*background:#fcfcfc;*/
+	position:relative;
+	margin:0;
+	padding:0 0 450px 0; /*my*//*padding:0;*/
+}
+
+/* ===============================
+16. Footer
+================================ */
+/*my*/
+
+.hFooter{
+  height:100px;
+}
+
+.footer{
+	padding:0 0 0 0;
+	color:#fff;
+	background-color:#848383;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	/*height: 100px;*/
+	/*margin-bottom: -100px;*/
+	font-size: 20px; /*my*/
+}
+
+footer a {
+	  color:#fff;
+}
+
+footer a:hover {
+	color:#fff;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
+	color:#fff;
+}
+
+footer h5 a:hover, footer a:hover {
+	text-decoration:none;
+}
+
+iframe{
+    padding:5px;
+}
+/*---------------------- from mezzanine.css -----------------*/
+
+.nav-footer > ul {
+  display: inline-block;
+  width:130px;
+  margin-left: 0px;
+  margin-right: 0px;
+  vertical-align: top;
+}
+.nav-footer > ul > li {
+  
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-footer   a{
+    font-size: 18px;
+    color:#fff;
+}
+
+.nav-footer a:hover, a:focus{
+    color:#ccc;
+}
+
+.site-info , .site-info  a{
+    font-size: 90%;
+    margin-top: 15px;
+	color:#fff;
+}
+.site-info  a:hover{
+    font-size: 90%;
+    margin-top: 15px;
+	color:#ccc;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*-------------------------from bootstrap.css-------------------------------*/
+a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #ff9f9f;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/*-----------------------------------------------------------*/
+
+
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: none;/*my*/
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: none;/*none*/
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+

@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% load i18n  mezzanine_tags staticfiles%}
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+{% block breadcrumb_wrapper %}
+{% endblock %}
+
+{% block title_wrapper %}
+{% endblock %}
+{% block start_background %}<div id="index-wrapper">{% endblock %} <!--my-->
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+
+
+{% block all_content %}
+
+
+{% block slider %}
+
+<!-- start slider -->
+<div class="col-sm-1">
+</div>
+
+<div class="col-sm-10">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="{% static "img/slides/1.jpg"%}" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="{% static "img/slides/2.jpg"%}" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+	<div class="item">
+      <img src="{% static "img/slides/3.jpg"%}" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="{% static "img/slides/4.jpg"%}" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+	<div class="item">
+      <img src="{% static "img/slides/5.jpg"%}" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+</div>
+
+<div class="col-sm-1">
+</div>
+<!-- end slider -->
+
+{% endblock %}
+
+{% block main %}
+<div class="container">
+  <!-- Start 3 Columns -->
+    <div class="row">
+        <!-- Start First Column -->
+        <div class="col-sm-1">
+        </div>
+        <!-- End First Column -->
+        <!-- Start Second Column -->
+        <div class="col-sm-10">
+            <div class="bs-component">
+            <h2>
+			<span class="my_text">
+			<br>
+			<p><b>ТОВ "КрокСвіт" Луцька філія</b> є ліцензованою фірмою, яка надає легальне працевлаштування в Польщі, Литві, Латвії та Фінляндії.</p>
+			<p><b>ТОВ "КрокСвіт"</b> має 10 філіалів по Україні.<p>
+			<p><i>Ліцензія Державного центру зайнятості АЕ № 272383 від 16.12.2013 р.</i><p>
+			<br>
+			<p>Наше головне завдання полягає в тому, щоб кожен бажаючий міг отримати гідну офіційну і легальну роботу за кордоном,яка дає впевненість в завтрашньому дні і хороші умови в процесі роботи.<p>
+			<br>
+              <ul class="my_ul">
+			  <li>Ми працюємо тільки з надійними партнерами, які забезпечують працівників легальною роботою та  соціальною підтримкою.</li>
+			  <li>Ми допоможемо Вам зорієнтуватися на ринку праці Польщі – підкажемо, які документи Вам необхідні для отримання дозволу на роботу.</li>
+              <li>Допоможемо Вам сформувати візовий пакет документів та надамо консультації з отримання віз.</li>
+              <li>Допоможемо придбати страховий поліс.</li>
+			  <li>Ми забезпечимо Вам повний супровід від пошуку роботи в Польщі, оформлення документів і до розміщення на території Польщі.</li>
+			  </ul>
+			 <br>
+			 <p>Легальна робота – запорука Вашого перебування на території Польщі без натяків на проблеми або складності.</p>
+             <p>Роботу в Польщі можна розділити на дві підгрупи: постійна праця (праця на заводах, фірмах, різноманітних підприємствах) та сезонна.</p>
+             <p>По всій Польщі в сезон (літній час) виникає велика кількість пропозицій роботи на фермах різної спеціалізації та різного розміру (вирощування птахів, вирощування великої рогатої худоби, свиноферми, фруктові сади та овочеві бази).</p>
+
+			  </span>
+            </div>
+        </div>
+        <!-- End Second Column -->
+        <!-- Start Third Column -->
+        <div class="col-sm-1">
+        </div>
+        <!-- End Third Column -->
+    </div>
+    <!-- End Three Columns -->
+</div>
+{% endblock %}
+
+
+
+	
+<!-- Start scripts EW slider-->
+<script src="{% static "js/ew_slider/roundabout.js"%}"></script>
+<script src="{% static "js/ew_slider/roundabout_shapes.js"%}"></script>
+<script src="{% static "js/jquery.easing.1.3.js"%}"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#myRoundabout').roundabout({
+			 shape: 'square',
+			 minScale: 0.93, // tiny!
+			 maxScale: 1, // tiny!
+			 easing:'easeOutExpo',
+			 clickToFocus:'true',
+			 focusBearing:'0',
+			 duration:800,
+			 reflect:true
+		});
+	});
+</script>
+<!-- End scripts EW slider-->
+
+{% endblock %}
+{% block end_background %}</div>{% endblock %} <!--my-->
